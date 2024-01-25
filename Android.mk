@@ -5,8 +5,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-LOCAL_PATH := $(device/mobiwire/LP)
+LOCAL_PATH := $(LOCAL_PATH)
 
-ifeq ($(device/mobiwire/LP),LP_Vyper)
-include $(call all-subdir-makefiles,$(device/mobiwire/LP))
+ifeq ($(TARGET_DEVICE),Vyper)
+include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
