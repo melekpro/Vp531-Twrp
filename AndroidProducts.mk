@@ -6,7 +6,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_LP_Vyper.mk
+    $(device/mobiwire/LP_Vyper)/omni_LP_Vyper.mk
 
 COMMON_LUNCH_CHOICES := \
     omni_LP_Vyper-user \
