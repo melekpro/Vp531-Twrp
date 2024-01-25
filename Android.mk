@@ -8,5 +8,5 @@
 LOCAL_PATH := $(device/mobiwire/LP)
 
 ifeq ($(device/mobiwire/LP),LP_Vyper)
-include $(call all-subdir-makefiles,$(LOCAL_PATH))
+include $(call all-subdir-makefiles,$(device/mobiwire/LP))
 endif
