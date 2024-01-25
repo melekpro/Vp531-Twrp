@@ -5,11 +5,11 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 
-# Inherit from LP_Vyper device
-$(call inherit-product, device/mobiwire/LP_Vyper/device.mk)
+# Inherit some common TWRP stuff.
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 PRODUCT_DEVICE := LP_Vyper
 PRODUCT_NAME := omni_LP_Vyper
